@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="products.xsl"?>
+<products>
+    <product>
+        <name>Smartphone</name>
+        <category>Electronics</category>
+        <price>499.99</price>
+    </product>
+    <product>
+        <name>Laptop</name>
+        <category>Electronics</category>
+        <price>899.99</price>
+    </product>
+    <product>
+        <name>Headphones</name>
+        <category>Accessories</category>
+        <price>79.99</price>
+    </product>
+</products>

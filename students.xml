@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<students>
+    <heading>University Student Records</heading>
+
+    <student>
+        <name>Emily Carter</name>
+        <rollno>CS2021-045</rollno>
+        <course>BSc Computer Science</course>
+        <year>2nd Year</year>
+        <grade>A</grade>
+    </student>
+
+    <student>
+        <name>Raj Patel</name>
+        <rollno>ME2021-087</rollno>
+        <course>B.Tech Mechanical Engineering</course>
+        <year>3rd Year</year>
+        <grade>B+</grade>
+    </student>
+</students>

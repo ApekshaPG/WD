@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .radio-group, .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #2980b9;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1c5980;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Registration Form</h2>
+
+    <form action="#" method="post">
+        <label for="empid">Employee ID:</label>
+        <input type="text" id="empid" name="empid" required>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male" style="display:inline;">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female" style="display:inline;">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other" style="display:inline;">Other</label>
+        </div>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="Development">Development</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Support">Support</option>
+        </select>
+
+        <label for="remarks">Comments/Remarks:</label>
+        <textarea id="remarks" name="remarks" rows="4" cols="40"></textarea>
+
+        <label>Skills:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="skills" value="Java"> Java<br>
+            <input type="checkbox" name="skills" value="Python"> Python<br>
+            <input type="checkbox" name="skills" value="C++"> C++<br>
+            <input type="checkbox" name="skills" value="Web Development"> Web Development
+        </div>
+
+        <input type="submit" value="Register Employee">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time Table - SY B 2024-2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.5;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    /* Header */
+    .container h2,
+    .container h3,
+    .container h4 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #004d40;
+    }
+    .container h2 {
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
+    .container h3 {
+      font-size: 1.4rem;
+    }
+    .container h4 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #00796b;
+    }
+    .class-info {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    /* Table wrapper for responsiveness */
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+      vertical-align: top;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #00796b;
+      color: #fff;
+      font-weight: 600;
+    }
+    tr:nth-child(even) td {
+      background: #f9f9f9;
+    }
+    tr:hover td {
+      background: #e0f7fa;
+    }
+
+    /* Time slots column */
+    td:first-child, th:first-child {
+      background: #e0f2f1;
+      font-weight: 600;
+      color: #004d40;
+      width: 15%;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 0.8rem;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>D. Y. Patil College of Engineering & Technology, Kolhapur</h2>
+    <h3>Department of Computer Science & Engineering</h3>
+    <h4>TimeTable 2024-2025 (SEM-II)</h4>
+    <div class="class-info">Class: S.Y. - B</div>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Day &amp; Time</th>
+          <th>9.00 to 10.00</th>
+          <th>10.00 to 11.00</th>
+          <th>11.15 to 12.15</th>
+          <th>12.15 to 1.15</th>
+          <th>2.00 to 3.00</th>
+          <th>3.00 to 4.00</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>
+            S1-DSL (SS Kokate) Lab 8<br>
+            S2-AOOC (CK BK) Lab 5<br>
+            S3-TPMS (PRP) Lab 11<br>
+            S4-TTL (SP S) Lab 10<br>
+            S5-TTL (IPT) Lab 12<br>
+            S6-WD (SS Kore) Lab 2
+          </td>
+          <td>Same as 9–10 labs</td>
+          <td>DS (L)<br>SS Kokate</td>
+          <td>MDM-II (L)<br>VVM</td>
+          <td>AT (L)<br>KAB</td>
+          <td>ES (L)<br>PA</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>
+            S1-WD (SS Kore) Lab 2<br>
+            S2-DSL (SS Kokate) Lab 8<br>
+            S3-AOOC (CK BK) Lab 5<br>
+            S4-TPMS (PRP) Lab 11<br>
+            S5-TTL (SP S) Lab 10<br>
+            S6-TTL (IPT) Lab 12
+          </td>
+          <td>Same as 9–10 labs</td>
+          <td>AT (L)<br>KAB</td>
+          <td>DS (L)<br>SS Kokate</td>
+          <td colspan="2">Dept. Activity</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>
+            S1-TTL (IPT) Lab 12<br>
+            S2-WD (SS Kore) Lab 2<br>
+            S3-DSL (SS Kokate) Lab 8<br>
+            S4-AOOC (CK BK) Lab 5<br>
+            S5-TPMS (PRP) Lab 11<br>
+            S6-TTL (SP S) Lab 10
+          </td>
+          <td>Same as 9–10 labs</td>
+          <td>AOOC (L)<br>KBK</td>
+          <td>MDM-II (L)<br>VVM</td>
+          <td colspan="2">Dept. Activity</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>
+            S1-TTL (SP S) Lab 10<br>
+            S2-TTL (IPT) Lab 12<br>
+            S3-DSL (SS Kokate) Lab 8<br>
+            S4-AOOC (CK BK) Lab 5<br>
+            S5-TPMS (PRP) Lab 11
+          </td>
+          <td>Same as 9–10 labs</td>
+          <td>AOOC (L)<br>KBK</td>
+          <td>DS (L)<br>SS Kokate</td>
+          <td>AT (L)<br>KAB</td>
+          <td>OEC-II</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>
+            S1-TPMS (PRP) Lab 11<br>
+            S2-TTL (SP S) Lab 10<br>
+            S3-WD (IPT) Lab 12<br>
+            S4-DSL (SS Kokate) Lab 8<br>
+            S5-AOOC (CK BK) Lab 5<br>
+            S6-WD (SS Kore) Lab 2
+          </td>
+          <td>Same as 9–10 labs</td>
+          <td colspan="2">
+            S1-AOOC (CK BK) Lab 5<br>
+            S2-TPMS (PRP) Lab 11<br>
+            S3-TTL (AAS) Lab 10<br>
+            S4-TTL (NNP) Lab 12<br>
+            S5-WD (SS Kore) Lab 2<br>
+            S6-DSL (SS Kokate) Lab 8
+          </td>
+          <td>TPMS (L)<br>PRP</td>
+          <td>OEC-II</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td colspan="2">LL (L)<br>(ASY, RSJ, MV)</td>
+          <td colspan="2">LL (L)<br>(ASY, RSJ, MVB)</td>
+          <td colspan="2">LL (L)<br>*Self</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

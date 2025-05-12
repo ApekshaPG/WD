@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7 Wonders of India</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ————————————————————
+       CSS VARIABLES & RESET
+       ———————————————————— */
+    :root {
+      --primary: #00796b;
+      --secondary: #004d40;
+      --light-bg: #f9fdfa;
+      --card-bg: #ffffff;
+      --text: #333333;
+      --accent: #80cbc4;
+      --transition: 0.3s ease;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ————————————————————
+       NAVBAR
+       ———————————————————— */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: var(--card-bg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 600;
+      transition: color var(--transition);
+    }
+    nav a:hover { color: var(--primary); }
+
+    /* ————————————————————
+       HEADER
+       ———————————————————— */
+    header {
+      padding: 120px 20px 40px; /* account for fixed nav */
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    header p {
+      color: var(--secondary);
+      font-size: 1rem;
+    }
+
+    /* ————————————————————
+       GRID LAYOUT
+       ———————————————————— */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .wonder {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.07);
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .wonder:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    }
+    .wonder img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform var(--transition);
+    }
+    .wonder img:hover {
+      transform: scale(1.05);
+    }
+    .wonder-content {
+      padding: 20px;
+    }
+    .wonder-content h2 {
+      margin-bottom: 10px;
+      color: var(--secondary);
+      font-size: 1.3rem;
+    }
+    .wonder-content p {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    /* ————————————————————
+       FOOTER
+       ———————————————————— */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--card-bg);
+      color: var(--secondary);
+      margin-top: 40px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#taj">Taj Mahal</a></li>
+      <li><a href="#khajuraho">Khajuraho</a></li>
+      <li><a href="#hampi">Hampi</a></li>
+      <li><a href="#golden">Golden Temple</a></li>
+      <li><a href="#qutub">Qutub Minar</a></li>
+      <li><a href="#sun">Sun Temple</a></li>
+      <li><a href="#ajanta">Ajanta & Ellora</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>7 Wonders of India</h1>
+    <p>A visual journey through India's most iconic landmarks</p>
+  </header>
+
+  <main>
+    <section id="taj" class="wonder">
+      <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/c3/53.jpg" alt="Taj Mahal">
+      <div class="wonder-content">
+        <h2>1. Taj Mahal</h2>
+        <p>The Taj Mahal is a white marble mausoleum in Agra, built by Shah Jahan in memory of Mumtaz Mahal. A UNESCO World Heritage Site and symbol of India's rich history.</p>
+      </div>
+    </section>
+
+    <section id="khajuraho" class="wonder">
+      <img src="https://static.toiimg.com/thumb/64665528/Khajuraho-Temples.jpg?width=1200&height=900" alt="Khajuraho Temples">
+      <div class="wonder-content">
+        <h2>2. Khajuraho Temples</h2>
+        <p>Built between 950–1050 AD by the Chandela dynasty, these temples in Madhya Pradesh are famed for their intricate carvings and erotic sculptures.</p>
+      </div>
+    </section>
+
+    <section id="hampi" class="wonder">
+      <img src="https://beyonder.travel/wp-content/uploads/2020/05/Stone-Chariot-Vittala-Temple-Hampi.jpg" alt="Hampi">
+      <div class="wonder-content">
+        <h2>3. Hampi</h2>
+        <p>Once the capital of the Vijayanagara Empire (1336–1565), Hampi in Karnataka is a sprawling ruin of temples, palaces, and bazaars set amidst giant boulders.</p>
+      </div>
+    </section>
+
+    <section id="golden" class="wonder">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxF3vupqic9XjaGkZTVE_a5S8aFhnc1ilWvg&s" alt="Golden Temple">
+      <div class="wonder-content">
+        <h2>4. Golden Temple</h2>
+        <p>The holiest gurdwara of Sikhism in Amritsar, covered in gold leaf and surrounded by a reflective pool, offering peace and communal kitchens feeding thousands daily.</p>
+      </div>
+    </section>
+
+    <section id="qutub" class="wonder">
+      <img src="https://cdn-ijnhp.nitrocdn.com/pywIAllcUPgoWDXtkiXtBgvTOSromKIg/assets/images/optimized/rev-5794eaa/www.jaypeehotels.com/blog/wp-content/uploads/2023/11/Blog-5.jpg" alt="Qutub Minar">
+      <div class="wonder-content">
+        <h2>5. Qutub Minar</h2>
+        <p>Started by Qutb-ud-Din Aibak in 1199 and completed by Iltutmish, this 73m minaret in Delhi is a masterpiece of early Indo-Islamic architecture.</p>
+      </div>
+    </section>
+
+    <section id="sun" class="wonder">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM8SNMes3N3Pkfyhpk0AF2WAiuTEI8URsy4w&s" alt="Sun Temple">
+      <div class="wonder-content">
+        <h2>6. Sun Temple</h2>
+        <p>The Konark Sun Temple in Odisha, shaped like a gigantic chariot with twelve pairs of stone wheels, dedicated to the Sun God Surya, dates to the 13th century.</p>
+      </div>
+    </section>
+
+    <section id="ajanta" class="wonder">
+      <img src="https://breathedreamgo.com/wp-content/uploads/2010/03/India-for-Beginners-custom-tours-5.jpg" alt="Ajanta and Ellora Caves">
+      <div class="wonder-content">
+        <h2>7. Ajanta &amp; Ellora Caves</h2>
+        <p>These rock-cut cave complexes near Aurangabad, Maharashtra, span 600 years of art and architecture, showcasing Buddhist, Hindu, and Jain traditions.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Your Name • Designed with ❤️ in India
+  </footer>
+
+</body>
+</html>
+
+    
